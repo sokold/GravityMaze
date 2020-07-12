@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F5A-g9-7Ha">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Information View Controller-->
+        <scene sceneID="xeE-ZI-GmH">
+            <objects>
+                <viewController storyboardIdentifier="InformationViewController" id="F5A-g9-7Ha" customClass="InformationViewController" customModule="GravityMaze" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Dv-5u-mGB">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNg-Y5-MCk">
+                                <rect key="frame" x="30" y="60" width="607" height="265"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="11m-6x-Fe9">
+                                        <rect key="frame" x="10" y="10" width="577" height="245"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Creator mode:
+Drag up to 5 geometries from the toolbar below and drop them on the screen. Tap the start button to let the ball fall and let the ball successfully reach the exit (vortex) after colliding with these geometries.
+
+Stage mode:
+Tap the start button to let the ball fall, tilt the phone left and right to give the ball a thrust, and let the ball successfully reach the exit (vortex) after colliding with these geometry. You can tap the refresh button to change the position of these geometry.</string>
+                                        <color key="textColor" red="0.58470812179999998" green="0.52126607970000005" blue="0.44002806500000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="11m-6x-Fe9" secondAttribute="trailing" constant="20" id="Qzw-87-RFz"/>
+                                    <constraint firstItem="11m-6x-Fe9" firstAttribute="leading" secondItem="zNg-Y5-MCk" secondAttribute="leading" constant="10" id="RLw-xN-cbY"/>
+                                    <constraint firstAttribute="bottom" secondItem="11m-6x-Fe9" secondAttribute="bottom" constant="10" id="Wql-Xr-LDJ"/>
+                                    <constraint firstItem="11m-6x-Fe9" firstAttribute="top" secondItem="zNg-Y5-MCk" secondAttribute="top" constant="10" id="hYQ-dM-oXb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zNg-Y5-MCk" firstAttribute="leading" secondItem="xKg-uo-eNO" secondAttribute="leading" constant="30" id="Psh-aD-X49"/>
+                            <constraint firstItem="zNg-Y5-MCk" firstAttribute="top" secondItem="xKg-uo-eNO" secondAttribute="top" constant="60" id="b9X-rJ-jXq"/>
+                            <constraint firstItem="xKg-uo-eNO" firstAttribute="bottom" secondItem="zNg-Y5-MCk" secondAttribute="bottom" constant="50" id="nPk-G9-yyi"/>
+                            <constraint firstItem="xKg-uo-eNO" firstAttribute="trailing" secondItem="zNg-Y5-MCk" secondAttribute="trailing" constant="30" id="oGo-hD-Mqj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xKg-uo-eNO"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="zNg-Y5-MCk" id="5f2-bt-Brn"/>
+                        <outlet property="textView" destination="11m-6x-Fe9" id="QSg-ge-zAy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TaM-CB-0Y7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2998.125" y="94.014084507042256"/>
+        </scene>
+    </scenes>
+</document>
